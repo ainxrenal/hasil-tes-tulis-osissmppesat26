@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Pengumuman Tes Tulis Seleksi OSIS SMP Pesat 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Figtree:wght@400..700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --bg: #EEF2F9;
+  --surface: #FFFFFF;
+  --ink: #142044;
+  --muted: #4F5B78;
+  --line: #C5CEE2;
+  --accent: #FFC72C;
+  --accent-ink: #142044;
+  --ok: #136B45;
+  --ok-bg: #E2F4EA;
+  --no: #7E3F51;
+  --no-bg: #F6E7EB;
+  --chk: #6B5200;
+  --chk-bg: #FFF1C4;
+  --focus: #2450E0;
+  --font-display: "Bricolage Grotesque", "Figtree", system-ui, sans-serif;
+  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1428;
+    --surface: #172042;
+    --ink: #EAF0FF;
+    --muted: #A3AEC9;
+    --line: #2E3A66;
+    --accent: #FFC72C;
+    --accent-ink: #142044;
+    --ok: #6FDCA8;
+    --ok-bg: #12352A;
+    --no: #EFAABB;
+    --no-bg: #3A1F2B;
+    --chk: #FFD36B;
+    --chk-bg: #3A3010;
+    --focus: #8FB0FF;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0E1428;
+  --surface: #172042;
+  --ink: #EAF0FF;
+  --muted: #A3AEC9;
+  --line: #2E3A66;
+  --accent: #FFC72C;
+  --accent-ink: #142044;
+  --ok: #6FDCA8;
+  --ok-bg: #12352A;
+  --no: #EFAABB;
+  --no-bg: #3A1F2B;
+    --chk: #FFD36B;
+    --chk-bg: #3A3010;
+  --focus: #8FB0FF;
+  color-scheme: dark;
+}
+
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  min-height: 100vh;
+}
+
+/* Deretan tanda kecil di tepi atas, seperti penanda waktu pada lembar jawaban komputer */
+.marks {
+  height: 10px;
+  background: repeating-linear-gradient(90deg, var(--ink) 0 12px, transparent 12px 24px);
+}
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 28px 20px 56px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 22px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.bubble {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--ink);
+  flex: none;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.1rem, 8.5vw, 3.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  margin: 0 0 14px;
+  text-wrap: balance;
+}
+
+.lead {
+  margin: 0 0 30px;
+  color: var(--muted);
+  font-size: 1.125rem;
+  max-width: 44ch;
+}
+
+.demo {
+  margin: 0 0 22px;
+  padding: 9px 14px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+  font-size: 0.925rem;
+}
+
+/* Form pencarian */
+.label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+input[type="text"] {
+  flex: 1 1 260px;
+  min-width: 0;
+  height: 58px;
+  padding: 0 18px;
+  font: 600 1.125rem var(--font-body);
+  color: var(--ink);
+  background: var(--surface);
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+}
+input[type="text"]::placeholder { color: var(--muted); opacity: 0.85; font-weight: 500; }
+.btn-main {
+  flex: 0 0 auto;
+  height: 58px;
+  padding: 0 28px;
+  font: 700 1.05rem var(--font-body);
+  color: var(--accent-ink);
+  background: var(--accent);
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  cursor: pointer;
+}
+.btn-main:hover { filter: brightness(1.05); }
+.btn-main:active { transform: translateY(1px); }
+input[type="text"]:disabled, .btn-main:disabled { opacity: 0.5; cursor: not-allowed; }
+
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+input[type="text"]:focus-visible { outline-offset: 2px; }
+
+.hint { margin: 10px 0 0; color: var(--muted); font-size: 0.925rem; }
+.error {
+  margin: 14px 0 0;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: var(--no-bg);
+  color: var(--no);
+  font-weight: 600;
+}
+.error[hidden], .gate[hidden], .demo[hidden] { display: none; }
+
+/* Pengumuman belum dibuka */
+.gate {
+  margin: 0 0 26px;
+  padding: 18px 20px;
+  border: 2px dashed var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+.gate p { margin: 0; }
+.gate-title { font-weight: 700; font-size: 1.125rem; }
+.gate-date { color: var(--muted); margin-top: 2px !important; }
+.count {
+  margin-top: 10px !important;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hasil */
+#out { margin-top: 30px; scroll-margin-top: 16px; }
+#out:empty { margin-top: 0; }
+
+.choices-title { margin: 0 0 12px; font-weight: 700; }
+.choice-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.choice {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  text-align: left;
+  font: 600 1.05rem var(--font-body);
+  color: var(--ink);
+  background: var(--surface);
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.choice:hover { border-color: var(--ink); }
+.choice-class { color: var(--muted); font-weight: 500; font-size: 0.95rem; white-space: nowrap; }
+
+.slip {
+  position: relative;
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+  border-radius: 18px;
+}
+.slip-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px 16px;
+  padding: 22px 22px 24px;
+  border-radius: 16.5px 16.5px 0 0;
+}
+.is-ok .slip-top { background: var(--ok-bg); }
+.is-no .slip-top { background: var(--no-bg); }
+.is-chk .slip-top { background: var(--chk-bg); }
+
+.slip-id { flex: 1 1 200px; min-width: 0; }
+.slip-label { margin: 0; color: var(--muted); font-size: 0.9rem; }
+.slip-name {
+  margin: 2px 0 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.45rem, 5.5vw, 2rem);
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+}
+.slip-class { margin: 6px 0 0; font-weight: 600; }
+
+.stamp {
+  margin-left: auto;
+  padding: 5px 14px;
+  border: 3px solid currentColor;
+  border-radius: 10px;
+  outline: 2px solid currentColor;
+  outline-offset: -8px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  transform: rotate(-9deg);
+  animation: stamp-in 0.45s cubic-bezier(0.2, 0.8, 0.3, 1) 0.15s both;
+}
+.is-ok .stamp { color: var(--ok); }
+.is-no .stamp { color: var(--no); }
+.is-chk .stamp { color: var(--chk); }
+@keyframes stamp-in {
+  0%   { opacity: 0; transform: rotate(-9deg) scale(1.9); }
+  60%  { opacity: 1; transform: rotate(-9deg) scale(0.94); }
+  100% { opacity: 1; transform: rotate(-9deg) scale(1); }
+}
+
+/* Garis sobekan tiket */
+.perf { position: relative; height: 0; border-top: 2px dashed var(--line); margin: 0 14px; }
+.perf::before, .perf::after {
+  content: "";
+  position: absolute;
+  top: -13px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1.5px solid var(--line);
+}
+.perf::before { left: -26px; clip-path: inset(0 0 0 50%); }
+.perf::after  { right: -26px; clip-path: inset(0 50% 0 0); }
+
+.slip-bottom { padding: 22px 22px 24px; }
+.slip-status {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.6rem;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+.slip-status:focus { outline: none; }
+.is-ok .slip-status { color: var(--ok); }
+.is-no .slip-status { color: var(--no); }
+.is-chk .slip-status { color: var(--chk); }
+.slip-bottom p { margin: 0; max-width: 52ch; }
+
+.info {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-left: 4px solid var(--ok);
+  background: var(--ok-bg);
+  border-radius: 0 10px 10px 0;
+}
+.is-no .info { border-left-color: var(--no); background: var(--no-bg); }
+.is-chk .info { border-left-color: var(--chk); background: var(--chk-bg); }
+.info-title { font-weight: 700; margin-bottom: 2px !important; }
+
+.again {
+  margin-top: 22px;
+  padding: 11px 18px;
+  font: 700 0.975rem var(--font-body);
+  color: var(--ink);
+  background: transparent;
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.again:hover { background: var(--bg); }
+
+.foot { margin-top: 44px; padding-top: 18px; border-top: 2px solid var(--line); color: var(--muted); font-size: 0.95rem; }
+.foot p { margin: 0; max-width: 56ch; }
+.foot strong { color: var(--ink); }
+
+@media (max-width: 560px) {
+  .btn-main { width: 100%; }
+  .wrap { padding-top: 22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stamp { animation: none; }
+  .btn-main:active { transform: none; }
+}
+</style>
+</head>
+<body>
+<div class="marks" aria-hidden="true"></div>
+
+<main class="wrap">
+  <p class="brand"><span class="bubble" aria-hidden="true"></span>OSIS SMP Pesat 2026</p>
+
+  <h1>Pengumuman hasil tes tulis seleksi OSIS</h1>
+  <p class="lead">Ketik nama lengkapmu untuk melihat apakah kamu lolos ke tahap berikutnya.</p>
+
+  <p id="demo" class="demo" hidden>Data contoh. Ini bukan hasil seleksi yang sebenarnya.</p>
+
+  <div id="gate" class="gate" hidden>
+    <p class="gate-title">Pengumuman belum dibuka</p>
+    <p id="gate-date" class="gate-date"></p>
+    <p id="gate-count" class="count" aria-hidden="true"></p>
+  </div>
+
+  <form id="form" novalidate>
+    <label for="nama" class="label">Nama lengkap</label>
+    <div class="row">
+      <input id="nama" name="nama" type="text" autocomplete="off" autocapitalize="words" spellcheck="false" enterkeyhint="search" placeholder="Ketik nama lengkap sesuai formulir" aria-describedby="hint error">
+      <button id="btn" type="submit" class="btn-main">Cek hasil</button>
+    </div>
+    <p id="hint" class="hint">Huruf besar atau kecil tidak berpengaruh. Tulis sesuai nama di formulir pendaftaran.</p>
+    <p id="error" class="error" role="alert" hidden></p>
+  </form>
+
+  <section id="out" aria-label="Hasil pencarian"></section>
+
+  <noscript><p class="error">Halaman ini membutuhkan JavaScript agar pencarian nama bisa berjalan.</p></noscript>
+
+  <footer class="foot">
+    <p>Ada data yang tidak sesuai atau butuh bantuan? Hubungi <strong id="kontak"></strong>.</p>
+  </footer>
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  /* =========================================================
+     PENGATURAN — ubah bagian ini sesuai kebutuhan
+     ========================================================= */
+  var CONFIG = {
+    // true = tampilkan pita "Data contoh". Ubah ke false setelah data asli dimasukkan.
+    demoMode: false,
+
+    // Jadwal pengumuman dibuka (waktu WIB). Isi null jika langsung dibuka.
+    // Contoh: "2026-09-25T15:00:00+07:00"
+    releaseAt: null,
+
+    // Teks tambahan untuk siswa yang lolos (jadwal wawancara, tempat, bawaan, dll.)
+    infoLolos: "Kamu akan melanjutkan ke tahap wawancara. Jadwal dan tempat wawancara akan disampaikan oleh panitia seleksi OSIS. Pantau terus pengumuman di sekolah.",
+
+    // Teks tambahan untuk siswa yang belum lolos. Kosongkan ("") jika tidak perlu.
+    infoTidak: "",
+
+    // Teks untuk siswa yang datanya masih perlu dicek panitia
+    infoCek: "Temui atau hubungi panitia seleksi OSIS untuk memastikan hasilmu.",
+
+    // Kontak panitia yang tampil di bagian bawah halaman
+    kontak: "panitia seleksi OSIS SMP Pesat"
+  };
+
+  /* =========================================================
+     DATA SISWA — format tiap baris: ["Nama Lengkap", "Kelas", status]
+     status: 1 = lolos, 0 = tidak lolos, 2 = data perlu dicek panitia
+     (Sumber: Rekap_Penilaian_OSIS.xlsx, sheet Penilaian.)
+     ========================================================= */
+  var DATA = [
+    ["Abdillah Kenzie Praditya", "8E", 1],
+    ["Adhwa Faradisa Pranenda", "7H", 1],
+    ["Adhyastha Eka Pradipta Kusmiyanto", "8E", 1],
+    ["Adibha Khanza Al Idris", "7G", 1],
+    ["Adziqa Mazra Artanto", "7G", 1],
+    ["Adzkia Khanza Nur Rabani", "7E", 1],
+    ["Afifah Adinda Shafa", "7D", 1],
+    ["Afra Levana Keva Arkana", "8B", 1],
+    ["Afsya Amalia Solihat", "7E", 0],
+    ["Ahmad Ezra Ishak", "8C", 1],
+    ["Ahmad Haikal", "8F", 1],
+    ["Ahsan Sakhi Gianka", "7D", 1],
+    ["Ahza Samudhia Pranaja", "8H", 1],
+    ["Aina Khaerunnisa", "8B", 1],
+    ["Aina Mardhiyah", "7H", 1],
+    ["Aira Queensha Kamiya", "7F", 1],
+    ["Airillyn Naviza Belvania", "7G", 2],
+    ["Aisha Nayara Putri Aditya", "7B", 1],
+    ["Aisha Qori Aina", "8D", 1],
+    ["Aisyah Banati Lintange Natanagara", "7I", 1],
+    ["Aiyra Azarine Maizahanifa", "8D", 1],
+    ["Aldevaro Evandaru Anwisya", "7E", 1],
+    ["Aleica Adriani Almayra", "8H", 0],
+    ["Alesha Naila Zahran", "7B", 1],
+    ["Aleya Kavaya Mahera", "8I", 1],
+    ["Ali Musthafa Al Ghazali", "8I", 1],
+    ["Aliana Azka Naditya", "8F", 1],
+    ["Alifa Naqqiya Ramadhania", "8B", 1],
+    ["Alinka Aureliakanaya Umaran", "8G", 1],
+    ["Allyka Fathiya Zahran Chavali", "8C", 1],
+    ["Almamaira Zahreen Fauzi", "8G", 1],
+    ["Almeera Jazmine Annabelle", "8E", 2],
+    ["Alula Batrisya Sharleez", "7E", 1],
+    ["Alvian Hafidz Irawan", "7I", 1],
+    ["Alya Qonita Putri Subagio", "7G", 1],
+    ["Alykha Ramadani Adrian", "7I", 1],
+    ["Alysha Ramadani Adrian", "7A", 1],
+    ["Alysia Ayu Ramadhani", "8A", 1],
+    ["Anichsa Amalia Kinanti", "7F", 1],
+    ["Anissa Hasena Kamila", "7I", 1],
+    ["Aqila Hanifah", "8A", 0],
+    ["Aqila Nazwa Rabbani", "7E", 0],
+    ["Aqila Siti Fachrunnisa", "7F", 1],
+    ["Aqsazura Kinar Akbar", "8A", 0],
+    ["Arkhan Faeyza Yusawisana", "7C", 2],
+    ["Arsyla Justitia Andrian", "7G", 1],
+    ["Artemis Zahra Firyza", "7I", 1],
+    ["Ashraf Ghaisan Billah", "7I", 0],
+    ["Asma Hanna Firdaus", "7E", 1],
+    ["Aswin Hannan Kolopaking", "8G", 1],
+    ["Athalia Tiara Sofia Yudistira", "7A", 0],
+    ["Atharizz Dzukron Jawas", "7B", 2],
+    ["Athaya Nayshilla Ghaisani", "7F", 1],
+    ["Attira Naufalin Maritza", "8E", 1],
+    ["Audriyanka Putri Herianto", "7A", 1],
+    ["Aufarizal Erabbani Alkasha", "7A", 1],
+    ["Aulia Zahwa Nasution", "8H", 1],
+    ["Ayesha Saliha Martayanto", "7D", 1],
+    ["Azalia Zahwa Callysta", "8E", 1],
+    ["Azka Danendra Damavidya", "7E", 0],
+    ["Azriel Faeza Alghifari", "8B", 1],
+    ["Bagaspati Shankara Athaya Ajmaher", "7D", 0],
+    ["Bazla Noorkhalifa Zularashy", "7E", 1],
+    ["Bissmillah", "8E", 2],
+    ["Braja Natha Prawiradilaga", "7A", 1],
+    ["Brian Ahmad Arghani", "7A", 1],
+    ["Bumi Kenandra Suryadi", "7C", 0],
+    ["Callysta Chaura Farasabella", "8D", 0],
+    ["Cellomitha", "8F", 2],
+    ["Chantal Apmea Mahan", "7E", 1],
+    ["Dafira Alya Fariz Bawahab", "8A", 0],
+    ["Dahayu Laras Kinanti", "7E", 1],
+    ["Dalisha Syakira Nuriansyah", "8A", 1],
+    ["Darren Kenzie", "7E", 2],
+    ["Dayanara Ilmira Pradiva", "8E", 1],
+    ["Denara Kuswandi", "8C", 1],
+    ["Difania Aulia Nafisa", "8F", 1],
+    ["Dikveinna Locita Hayatunajah", "7E", 1],
+    ["Earlene Kennes Dharmaputri", "7H", 1],
+    ["Fadel Umar Abiyu Rafif", "7A", 1],
+    ["Fadilenda Aydinata Aryono", "8G", 1],
+    ["Fahira Rizqi Shafiyya", "7I", 1],
+    ["Fairel Al Sakha Calief Yulianto", "8H", 1],
+    ["Fannisa Fatin Fauziah", "7D", 1],
+    ["Faranissa Kirana Djunaedi", "8F", 1],
+    ["Fathahyra Aica Perdinan", "7A", 1],
+    ["Fathia Tri Meilani", "8G", 1],
+    ["Fatih Ariban Niskala", "8H", 1],
+    ["Felcia Trevalin Ayupratama", "8A", 0],
+    ["Garneta Hasya Permana", "8D", 1],
+    ["Gathan Arkha Kaisan", "8A", 0],
+    ["Gendis Fathiyyah Lestari", "8H", 1],
+    ["Ghani Nevan Hamizan", "8E", 1],
+    ["Gusti Sabka", "8F", 1],
+    ["Habibi Shareza Zidny Munandar Rumin", "7A", 1],
+    ["Hafizh Syahdan Alkhalifi", "7H", 1],
+    ["Hasya Zhafirah", "8E", 0],
+    ["Hatta Zakaria", "8E", 0],
+    ["Humaira Qanita Rachman", "7F", 1],
+    ["Jasmine Farah Hidayat", "7F", 0],
+    ["Jasmine Kayla Salsabila", "8G", 1],
+    ["Julianka Alvaro Siddiq", "8C", 2],
+    ["Kaisa Alfiah Ramadhan", "7C", 1],
+    ["Kalani Shasi Kirana", "7D", 0],
+    ["Kalila Mysha Odelia Annapurna", "8G", 1],
+    ["Kamiya Bassamah Abarest", "7A", 1],
+    ["Kanahaya Abiya Maulida", "7B", 2],
+    ["Kayana Putri Veriasa", "8H", 1],
+    ["Kayla Anjani Insani", "7F", 1],
+    ["Kayla Putri Budiarto", "7C", 0],
+    ["Kayna Cinta Querida Arneldi", "7G", 2],
+    ["Kaysha Zhafira Rifai", "7C", 0],
+    ["Kayyisa Putri Veriasa", "8E", 0],
+    ["Keenar Arsyfa Salsabila", "7D", 1],
+    ["Khailila Khadijah Madduppa", "8B", 1],
+    ["Khalda Wahyushubhi", "8F", 1],
+    ["Khalis", "8E", 0],
+    ["Khalisa Sakinah Putri M.", "7E", 1],
+    ["Khansa Fazila Azkadina", "8C", 1],
+    ["Khansa Raihana Ardian", "8I", 0],
+    ["Khanza Athifa Khalilah", "8I", 1],
+    ["Kimora Leisha Yusuf", "7F", 1],
+    ["Kinanthi Syarifah Kusumaningru.", "7C", 1],
+    ["Luqman Habibie Thalib", "7I", 2],
+    ["M. Saladin Shakeel Auliya", "8E", 1],
+    ["Mahira Ayudiana Faria", "7C", 1],
+    ["Mahran Sakhi Arundati", "7E", 1],
+    ["Malaeka Carmanghia Airys Jasmine", "7A", 1],
+    ["Malika Aira Maulana", "7G", 2],
+    ["Malika Aqila Zifara", "7H", 1],
+    ["Marsha Nur Aquila Anshari", "7E", 1],
+    ["Maryam Qanita Annaqli", "7G", 1],
+    ["Mikayla Naurah Syofari", "8I", 1],
+    ["Misha Malaika Jahida", "7F", 0],
+    ["Mochamad Arvan Juliawan", "7I", 0],
+    ["Muhamad Alfaizi Ramadhan", "7A", 1],
+    ["Muhammad Al Nabil Putra", "7I", 2],
+    ["Muhammad Alvindra Banyuraka Ramadhan", "8A", 0],
+    ["Muhammad Arkaan Wicaksono", "7E", 0],
+    ["Muhammad Fath Al Ahsan", "7D", 0],
+    ["Muhammad Fatih Alkina", "8B", 1],
+    ["Muhammad Nabil Altamis", "7E", 0],
+    ["Muhammad Nizar Saputra", "7F", 0],
+    ["Muhammad Rafa Al Fadhil", "7A", 1],
+    ["Muhammad Rakha Nata Kumara", "8B", 1],
+    ["Muhammad Rasya Athaya", "8D", 1],
+    ["Muhammad Rasya Athaya", "8G", 2],
+    ["Muhammad Razka Al Rasyid", "7I", 1],
+    ["Muhammad Reynard Hasri", "8H", 1],
+    ["Muhammad Runako Werdi", "7E", 1],
+    ["Muthi Abraham Nasrullah", "8E", 1],
+    ["Nabila Insyirah", "8C", 1],
+    ["Nabila Safitri", "7B", 0],
+    ["Nadhifa Nazma Rafanda", "7C", 1],
+    ["Nadhira Arissya Putri", "7H", 1],
+    ["Nadinka Zahra Kirana", "8A", 0],
+    ["Nadya Yoona Shatirra", "8I", 1],
+    ["Nafla Azeela Felice", "8E", 1],
+    ["Najla Dzakira Nafasha", "8A", 0],
+    ["Nargheess Az Zahra", "7E", 0],
+    ["Nasywa Azzahra Firdaus", "7D", 1],
+    ["Naura Kinanti Gunawijaya", "8H", 0],
+    ["Naura Lakesha Arabella", "7D", 1],
+    ["Nawanindhra Sastya Triwikramawatara", "7G", 1],
+    ["Nazwa Ainindiva", "7H", 1],
+    ["Nazwa Shabrina Abdullah", "8D", 1],
+    ["Ozzora Neoma Zerlyn", "8C", 2],
+    ["Peter James Melvyn", "7H", 1],
+    ["Qisya Silwinika Charizkie", "8D", 1],
+    ["Queensha Fidha Fathinah", "8A", 1],
+    ["Queisha Nauraqina Andria", "8H", 1],
+    ["Quorra Khaliqa Diandra Adzkira", "7A", 1],
+    ["Radinka Aisyah Putri Kertapati", "8I", 1],
+    ["Raffief Abrizham Faisal", "7C", 0],
+    ["Raied Rayyan Hakiki.", "7D", 1],
+    ["Raisa Salsabila", "8E", 1],
+    ["Raisha Hana Fadhilah", "7A", 2],
+    ["Raisya Ervina Karim", "8F", 0],
+    ["Raisya Nabilah Putri", "8D", 1],
+    ["Raisya Nur Rizqika", "7F", 1],
+    ["Raline Saafia Dinarzad", "7B", 1],
+    ["Ratu Andalusia", "7D", 1],
+    ["Raziq Hafuza Madani", "7B", 2],
+    ["Razka Faeyza Al-abyaz", "8I", 1],
+    ["Razqa Satya Sofian", "8A", 1],
+    ["Sabrina Laila Prabowo", "7H", 1],
+    ["Sahara Alinea Wicaksono", "8C", 2],
+    ["Sahila Afra Destikawa", "7F", 1],
+    ["Sahila Nadhifah", "7E", 0],
+    ["Sakti Rizky Dimas Prawira", "8H", 1],
+    ["Salsabila Agni Sopian", "8E", 0],
+    ["Salsabila Nurfitria Qaila Suhendar", "7H", 0],
+    ["Sashenka Maryamah Fatimah", "7D", 0],
+    ["Savanna Sabila Indriani", "8B", 1],
+    ["Sekar Kinanthi Arnasya", "8I", 0],
+    ["Shazia N Nafeeza", "8F", 1],
+    ["Sheriel Az-zahra Setiyadi", "7C", 1],
+    ["Sherkhan Muhammad Ferian", "8C", 2],
+    ["Sulthon Fachry Arabi", "8D", 2],
+    ["Syafiqa Asna Kinarian", "8G", 1],
+    ["Syafqi Akhtara Farsya", "7H", 1],
+    ["Syaihan Daffa", "7I", 2],
+    ["Syakila Azzaliya Farsya", "8I", 1],
+    ["Syamima Adziqa Mahira", "7D", 1],
+    ["Syeikha Shidqia Aurlyn", "7D", 1],
+    ["Syifa Bhanuwati Tyandra", "7D", 1],
+    ["Syifa Namira Alfariza", "7G", 1],
+    ["Tanisha Ranakhaira", "8C", 1],
+    ["Tsalsa Aulia Rahma", "8C", 1],
+    ["Umar Hamdi", "7I", 0],
+    ["Umarhamdi", "7I", 2],
+    ["Valery Bilqis Aulia", "7D", 1],
+    ["Wardah Nur Fathimah", "7G", 0],
+    ["Yasmin Khadijah Maulidya", "7F", 2],
+    ["Yusuf Uwais Al Qarany", "7F", 2],
+    ["Zaafarani Hasanah Badadal", "8H", 1],
+    ["Zahara Kamilah Rohadatul'aisy Qinain", "7I", 0],
+    ["Zaneta Putri Suherlan", "8C", 0],
+    ["Zanetta Mikhayla Putri Gunawan", "7E", 1]
+  ];
+
+  /* =========================================================
+     LOGIKA HALAMAN
+     ========================================================= */
+  var MIN_CHARS = 3;      // minimal huruf yang harus diketik
+  var MAX_CHOICES = 8;    // batas daftar nama yang cocok
+
+  var $ = function (id) { return document.getElementById(id); };
+  var form = $("form"), input = $("nama"), btn = $("btn");
+  var out = $("out"), errBox = $("error");
+  var reduceMotion = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var locked = false;
+
+  function norm(s) {
+    return String(s)
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  var records = DATA.map(function (row) {
+    return { n: row[0], k: row[1], s: row[2], key: norm(row[0]) };
+  });
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  function search(q) {
+    var nq = norm(q);
+    if (nq.length < MIN_CHARS) return { type: "short" };
+
+    var exact = records.filter(function (r) { return r.key === nq; });
+    var pool = exact.length ? exact : records.filter(function (r) {
+      var words = r.key.split(" ");
+      return nq.split(" ").every(function (t) {
+        return words.some(function (w) { return w.indexOf(t) === 0; });
+      });
+    });
+
+    if (pool.length === 0) return { type: "none" };
+    if (pool.length === 1) return { type: "one", r: pool[0] };
+    if (pool.length > MAX_CHOICES) return { type: "many", n: pool.length };
+    return { type: "list", list: pool };
+  }
+
+  function showError(msg) {
+    errBox.textContent = msg;
+    errBox.hidden = false;
+  }
+  function clearError() { errBox.hidden = true; errBox.textContent = ""; }
+  function clearOut() { out.replaceChildren(); }
+
+  function reveal(focusTarget) {
+    if (focusTarget) focusTarget.focus({ preventScroll: true });
+    out.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+  }
+
+  function showChoices(list) {
+    var box = el("div", "choices");
+    var title = el("p", "choices-title", "Ada beberapa nama yang cocok. Pilih namamu:");
+    title.tabIndex = -1;
+    box.appendChild(title);
+
+    var ul = el("ul", "choice-list");
+    list.forEach(function (r) {
+      var li = el("li");
+      var b = el("button", "choice");
+      b.type = "button";
+      b.appendChild(el("span", "choice-name", r.n));
+      if (r.k) b.appendChild(el("span", "choice-class", "Kelas " + r.k));
+      b.addEventListener("click", function () { showResult(r); });
+      li.appendChild(b);
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+
+    clearOut();
+    out.appendChild(box);
+    reveal(title);
+  }
+
+  function showResult(r) {
+    var state = r.s === 1 ? "ok" : (r.s === 2 ? "chk" : "no");
+    var ok = state === "ok";
+    var slip = el("article", "slip is-" + state);
+
+    var top = el("div", "slip-top");
+    var id = el("div", "slip-id");
+    id.appendChild(el("p", "slip-label", "Nama peserta"));
+    id.appendChild(el("p", "slip-name", r.n));
+    if (r.k) id.appendChild(el("p", "slip-class", "Kelas " + r.k));
+    top.appendChild(id);
+    var stamp = el("div", "stamp", { ok: "LOLOS", no: "BELUM LOLOS", chk: "PERLU DICEK" }[state]);
+    stamp.setAttribute("aria-hidden", "true");
+    top.appendChild(stamp);
+    slip.appendChild(top);
+
+    slip.appendChild(el("div", "perf"));
+
+    var bottom = el("div", "slip-bottom");
+    var status = el("h2", "slip-status", { ok: "Selamat, kamu lolos!", no: "Kamu belum lolos kali ini", chk: "Hasilmu perlu dicek panitia" }[state]);
+    status.tabIndex = -1;
+    bottom.appendChild(status);
+    bottom.appendChild(el("p", null, {
+      ok: "Kamu dinyatakan lolos tes tulis seleksi OSIS SMP Pesat 2026 dan berhak melanjutkan ke tahap berikutnya.",
+      no: "Terima kasih sudah mengikuti tes tulis seleksi OSIS SMP Pesat 2026. Kamu belum melanjutkan ke tahap berikutnya. Usahamu sudah luar biasa, dan masih banyak cara untuk berkontribusi di sekolah.",
+      chk: "Data penilaianmu belum lengkap atau perlu dicocokkan ulang, jadi hasilnya belum bisa ditampilkan di sini."
+    }[state]));
+
+    var extra = { ok: CONFIG.infoLolos, no: CONFIG.infoTidak, chk: CONFIG.infoCek }[state];
+    if (extra) {
+      var info = el("div", "info");
+      if (state === "ok") info.appendChild(el("p", "info-title", "Tahap selanjutnya"));
+      if (state === "chk") info.appendChild(el("p", "info-title", "Yang perlu kamu lakukan"));
+      info.appendChild(el("p", null, extra));
+      bottom.appendChild(info);
+    }
+
+    var again = el("button", "again", "Cek nama lain");
+    again.type = "button";
+    again.addEventListener("click", function () {
+      clearOut();
+      clearError();
+      input.value = "";
+      input.focus();
+    });
+    bottom.appendChild(again);
+
+    slip.appendChild(bottom);
+    clearOut();
+    out.appendChild(slip);
+    reveal(status);
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (locked) return;
+    clearError();
+    clearOut();
+
+    var q = input.value.trim();
+    var res = search(q);
+
+    if (res.type === "short") {
+      showError("Ketik minimal " + MIN_CHARS + " huruf dari namamu.");
+    } else if (res.type === "none") {
+      showError("Nama \u201C" + q + "\u201D tidak ditemukan. Periksa ejaan atau coba tulis nama lengkap. Kalau masih tidak muncul, hubungi panitia.");
+    } else if (res.type === "many") {
+      showError("Ada " + res.n + " nama yang cocok. Ketik nama lengkapmu supaya hasilnya lebih tepat.");
+    } else if (res.type === "list") {
+      showChoices(res.list);
+    } else {
+      showResult(res.r);
+    }
+  });
+
+  input.addEventListener("input", clearError);
+
+  /* Pita data contoh dan kontak */
+  $("demo").hidden = !CONFIG.demoMode;
+  $("kontak").textContent = CONFIG.kontak;
+
+  /* Penjadwalan pengumuman */
+  function setLocked(v) {
+    locked = v;
+    input.disabled = v;
+    btn.disabled = v;
+  }
+
+  function pad(n) { return String(n).padStart(2, "0"); }
+
+  if (CONFIG.releaseAt) {
+    var releaseTime = new Date(CONFIG.releaseAt).getTime();
+    if (!isNaN(releaseTime) && Date.now() < releaseTime) {
+      var gate = $("gate");
+      var when;
+      try {
+        when = new Intl.DateTimeFormat("id-ID", {
+          dateStyle: "full", timeStyle: "short", timeZone: "Asia/Jakarta"
+        }).format(new Date(releaseTime)) + " WIB";
+      } catch (err) {
+        when = new Date(releaseTime).toString();
+      }
+      $("gate-date").textContent = "Dibuka pada " + when;
+      gate.hidden = false;
+      setLocked(true);
+
+      var tick = function () {
+        var ms = releaseTime - Date.now();
+        if (ms <= 0) {
+          clearInterval(timer);
+          gate.hidden = true;
+          setLocked(false);
+          return;
+        }
+        var s = Math.floor(ms / 1000);
+        var d = Math.floor(s / 86400);
+        var h = Math.floor((s % 86400) / 3600);
+        var m = Math.floor((s % 3600) / 60);
+        $("gate-count").textContent = (d > 0 ? d + " hari " : "") + pad(h) + ":" + pad(m) + ":" + pad(s % 60);
+      };
+      var timer = setInterval(tick, 1000);
+      tick();
+    }
+  }
+})();
+</script>
+</body>
+</html>
